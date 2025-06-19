@@ -350,3 +350,34 @@ body {
   flex-wrap: wrap;
   gap: 1.5rem;
 }
+.counter-section {
+  background-color: #111;
+  padding: 3rem 2rem;
+  text-align: center;
+  border-radius: 12px;
+  margin: 4rem 0;
+}
+
+.counter-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.counters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.counter-box h3 {
+  font-size: 3rem;
+  color: #8b5cf6;
+  margin: 0;
+}
+
+.counter-box p {
+  margin-top: 0.5rem;
+  color: #aaa;
+  font-size: 1.1rem;
+}
