@@ -387,19 +387,20 @@ body {
 }
 .package-grid, .price-grid {
   display: flex;
-  flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
-  margin-top: 2rem;
+  align-items: stretch;
 }
 
 .package-card, .price-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background: #111;
   padding: 2rem;
   border: 1px solid #333;
   border-radius: 12px;
   max-width: 300px;
-  text-align: center;
   flex: 1 1 250px;
 }
 
@@ -426,4 +427,83 @@ body {
 
 .cta-contratar:hover {
   background-color: #ccc;
+}
+.check-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  color: #ccc;
+}
+
+.check-list li {
+  display: flex;
+  align-items: start;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.check-list li span {
+  color: #8b5cf6;
+  font-weight: bold;
+}
+
+.price-tag {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 1rem 0;
+}
+
+
+.cta-contratar {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-contratar:hover {
+  background-color: #e2e2e2;
+}
+.price-footer {
+  margin-top: auto;
+  text-align: center;
+}
+.precios-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo-precios {
+  height: 50px;
+  width: auto;
+  cursor: pointer;
+}
+
+.precios-notas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 3rem;
+  color: #aaa;
+  text-align: center;
+}
+.precios-topbar {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 10;
+}
+
+.logo-precios {
+  height: 120px;
+  width: auto;
+  cursor: pointer;
 }

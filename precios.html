@@ -1,25 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GatoNegro IA</title>
+  <title>Precios | GatoNegro IA</title>
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
   <link rel="icon" href="assets/icon_logo.png" type="image/x-icon">
 </head>
-<section class="section" id="precios">
-  <h2>Precios</h2>
-  <div class="price-grid">
-    <div class="price-card">
-      <h3>Básico</h3>
-      <p><strong>$9.99</strong>/mes</p>
+<header class="precios-topbar">
+  <a href="index.html" class="logo-link">
+    <img src="assets/logo.png" alt="Volver al inicio" class="logo-precios" />
+  </a>
+</header>
+<body>
+  <section class="section" id="precios" style="padding-top: 6rem;">
+    <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem;">Precios</h2>
+
+    <div class="price-grid">
+      <!-- Tarjeta 1 -->
+      <div class="price-card">
+        <h3>Contestador</h3>
+        <ul class="check-list">
+          <li><span>✔</span> 2000 mensajes de WhatsApp</li>
+          <li><span>✔</span> 3 millones de tokens de OpenAI (ChatGPT)</li>
+          <li><span>✔</span> 20 preguntas frecuentes</li>
+        </ul>
+        <div class="price-footer">
+          <p class="price-tag">$130 USD / mes</p>
+          <button class="cta-contratar">Contratar</button>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2 -->
+      <div class="price-card">
+        <h3>Asistente Empresarial</h3>
+        <ul class="check-list">
+          <li><span>✔</span> 5000 mensajes de WhatsApp</li>
+          <li><span>✔</span> 7 millones de tokens de OpenAI (ChatGPT)</li>
+          <li><span>✔</span> 50 preguntas frecuentes</li>
+          <li><span>✔</span> Landing Page incluida</li>
+          <li><span>✔</span> CRM Web</li>
+          <li><span>✔</span> Telegram con mensajes ilimitados</li>
+        </ul>
+        <div class="price-footer">
+          <p class="price-tag">$230 USD / mes</p>
+          <button class="cta-contratar">Contratar</button>
+        </div>
+      </div>
     </div>
-    <div class="price-card">
-      <h3>Empresarial</h3>
-      <p><strong>$29.99</strong>/mes</p>
+
+    <!-- Notas -->
+    <div class="precios-notas">
+      <p>* Inclusión de automatizaciones a negociar</p>
+      <p>* Inclusión de llamadas telefónicas a negociar</p>
+      <p>* Planes de crecimiento y demanda de servidores</p>
+      <p>* Gestión de dominio propio y conexiones</p>
     </div>
-    <div class="price-card">
-      <h3>Premium</h3>
-      <p><strong>$59.99</strong>/mes</p>
-    </div>
-  </div>
-</section>
+  </section>
+</body>
+</html>
